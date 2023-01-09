@@ -18,13 +18,13 @@ export default async function handler(
 ) {
 	switch (req.method) {
 		case "GET":
-			const connectionConfig = {
-				networkId: "testnet", // first create a key store
+			const connectionConfig: nearAPI.ConnectConfig = {
+				networkId: "testnet",
 				nodeUrl: "https://rpc.testnet.near.org",
 				walletUrl: "https://wallet.testnet.near.org",
 				helperUrl: "https://helper.testnet.near.org",
-				explorerUrl: "https://explorer.testnet.near.org",
 				keyStore: myKeyStore,
+				headers: {},
 			}
 			const nearConnection = await connect(connectionConfig)
 			const account = await nearConnection.account("iamyash.testnet")
@@ -37,7 +37,7 @@ export default async function handler(
 					viewMethods: ["get_current_board"], // view methods do not change state but usually return a value
 					changeMethods: [""], // change methods modify state
 				}
-			)
+			) as any
 
 			try {
 				await contract.get_current_board()
