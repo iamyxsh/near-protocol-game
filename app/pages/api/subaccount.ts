@@ -1,4 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next"
 import * as nearAPI from "near-api-js"
 const { keyStores } = nearAPI
@@ -11,7 +10,6 @@ type Data = {
 	status: boolean
 }
 
-import { Pool } from "pg"
 import { CONTRACT_ADDRESS } from "../../constants"
 
 export default async function handler(
