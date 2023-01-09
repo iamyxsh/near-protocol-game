@@ -12,8 +12,8 @@ import { useGame } from "../context/game"
 type Props = {}
 
 const Homepage = (props: Props) => {
-	const [start, setStart] = useState(true)
-	const [game, setGame] = useState("sub")
+	const [start, setStart] = useState(false)
+	const [game, setGame] = useState("")
 	const { createGame } = useGame()
 
 	return (
