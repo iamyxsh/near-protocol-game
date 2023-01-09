@@ -114,6 +114,7 @@ Yash Sharma - iamyxsh@icloud.com
 [start]: images/start.png
 [accept]: images/accept.png
 [withdraw]: images/withdraw.png
+[game]: images/game.png
 [next.js]:
 	https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
