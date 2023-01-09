@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clicked {
+	background: linear-gradient(145deg, #65bbd8, #78dfff);
+	box-shadow: 5px 0px 17px #478397, -5px -0px 17px #99ffff;
+}
+
+.unclicked {
+	background: linear-gradient(145deg, #78dfff, #65bbd8);
+	box-shadow: 5px 0px 17px #478397, -5px -0px 17px #99ffff;
+}
